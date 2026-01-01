@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Surgicals - Surgical and Lab Essentials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black background */
+            color: #FFD700; /* Gold text */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #FFD700; /* Gold border */
+            background-color: #111;
+        }
+        h1 {
+            color: #FFD700;
+            margin: 0;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); /* Placeholder medical background */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px #000;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .product {
+            border: 1px solid #FFD700;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #111; /* Dark gray for contrast */
+            display: flex;
+            align-items: center;
+        }
+        .product img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 1px solid #FFD700;
+        }
+        .product h3 {
+            color: #FFD700;
+            margin-top: 0;
+        }
+        form {
+            background-color: #111;
+            padding: 20px;
+            border: 1px solid #FFD700;
+            margin-bottom: 20px;
+        }
+        label, select, input, textarea, button {
+            display: block;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            background-color: #000;
+            border: 1px solid #FFD700;
+            color: #FFD700;
+        }
+        button {
+            background-color: #FFD700;
+            color: #000;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #FFA500; /* Darker gold on hover */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #FFD700;
+            background-color: #111;
+        }
+        .social-links a {
+            color: #FFD700;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #FFA500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unique Surgicals</h1>
+        <p>Your trusted source for surgical and lab essentials</p>
+    </header>
+
+    <div class="hero">
+        <h2>Quality Essentials for Healthcare Professionals</h2>
+    </div>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Unique Surgicals is dedicated to providing high-quality surgical and lab essentials to healthcare facilities, labs, and professionals. Owned by Sumit Kumar, we ensure reliability, affordability, and safety in every product. Contact us for bulk orders or custom needs.</p>
+    </section>
+
+    <section id="products">
+        <h2>Product Details</h2>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Surgical Gloves">
+            <div>
+                <h3>Surgical Gloves</h3>
+                <p>High-quality latex-free gloves for medical use. Available in sizes S, M, L, XL. Price: ₹50 per pair.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="N95 Masks">
+            <div>
+                <h3>N95 Masks</h3>
+                <p>Protective masks with 95% filtration. Pack of 10. Price: ₹200 per pack.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Lab Coats">
+            <div>
+                <h3>Lab Coats</h3>
+                <p>Durable white lab coats. Sizes: S, M, L. Price: ₹300 each.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1582560469781-1965b9d4b20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Disinfectant Spray">
+            <div>
+                <h3>Disinfectant Spray</h3>
+                <p>Alcohol-based sanitizer spray, 500ml. Price: ₹150 per bottle.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Place an Order</h2>
+        <form id="orderForm">
+            <label for="product">Select Product:</label>
+            <select id="product" required>
+                <option value="">Choose...</option>
+                <option value="Surgical Gloves">Surgical Gloves</option>
+                <option value="N95 Masks">N95 Masks</option>
+                <option value="Lab Coats">Lab Coats</option>
+                <option value="Disinfectant Spray">Disinfectant Spray</option>
+            </select>
+            
+            <label for="type">Type/Size:</label>
+            <select id="type" required>
+                <option value="">Choose...</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="Pack of 10">Pack of 10</option>
+                <option value="500ml">500ml</option>
+            </select>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" required>
+            
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="contactName">Name:</label>
+            <input type="text" id="contactName" required>
+            
+            <label for="contactEmail">Email:</label>
+            <input type="email" id="contactEmail" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <h3>Contact Details</h3>
+        <p>Owner: Sumit Kumar</p>
+        <p>Phone: 946366****</p>
+        <p>Email: [Your Email Here]</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const product = document.getElementById('product').value;
+            const type = document.getElementById('type').value;
+            const quantity = document.getElementById('quantity').value;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            alert(`Order submitted!\nProduct: ${product}\nType: ${type}\nQuantity: ${quantity}\nName: ${name}\nEmail: ${email}\nWe will contact you soon.`);
+            this.reset();
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const message = document.getElementById('message').value;
+            
+            alert(`Message sent!\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+            this.reset();
+        });
+    </script>
+</body>
+</html>
